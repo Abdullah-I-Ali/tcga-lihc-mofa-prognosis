@@ -1,0 +1,16 @@
+factor_id,mean_abs_correlation,sd_abs_correlation,min_abs_correlation,max_abs_correlation,pct_runs_positive_sign,pct_runs_exact_factor_id,elasticnet_selection_freq_pct,aligned_mean_univariate_hr,pct_runs_univariate_p_lt_05,feature_overlap_rna_jaccard,feature_overlap_meth_jaccard,feature_overlap_cnv_jaccard,feature_overlap_snv_jaccard,stability_verdict,biological_theme
+Factor1,0.9884,0.0037,0.9812,0.9957,100,100,76,0.9328,24,0.8201,0.8819,0.7973,0.5888,Highly Robust & Reproducible,Epigenomic Remodeling (High structural stability; 100% factor alignment)
+Factor2,0.9784,0.0182,0.9149,0.9939,100,96,100,0.7603,100,0.8201,0.8819,0.7973,0.5888,Highly Robust & Reproducible,Hepatocyte Differentiation vs Proliferation (Primary prognostic axis; highly reproducible)
+Factor3,0.8636,0.073,0.7019,0.9528,100,80,32,1.0724,12,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Chromosomal Instability / Somatic CNV (Broad chromosomal alterations)
+Factor4,0.8209,0.0645,0.6787,0.9317,92,20,28,0.9634,0,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Secondary Genomic Structural Instability
+Factor5,0.9816,0.008,0.9661,0.9924,100,36,12,1.0276,0,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Secondary Epigenetic / DNA Methylation Remodeling
+Factor6,0.7065,0.1007,0.5774,0.9385,76,12,40,0.9406,12,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Focal/Arm CNV Variation (Chr 1q/8q)
+Factor7,0.7179,0.1046,0.4245,0.9198,88,16,28,1.0149,4,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Focal/Arm CNV Variation (Chr 4/13)
+Factor8,0.7524,0.1033,0.5781,0.9255,96,28,68,1.1187,20,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Secondary CNV / Metabolic Alteration (Prognostic Modulator)
+Factor9,0.7847,0.0915,0.6036,0.9277,84,20,44,1.076,8,0.8201,0.8819,0.7973,0.5888,Moderately Stable Latent Signal,Focal/Arm CNV Variation (Chr 8p/17p)
+Factor10,0.6535,0.1196,0.3961,0.895,40,8,16,1.0179,4,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Focal/Arm CNV Variation (Chr 11q/19p)
+Factor11,0.6637,0.0873,0.5169,0.8298,80,8,24,1.0316,0,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Focal/Arm CNV Variation (Chr 6/16)
+Factor12,0.5666,0.0921,0.4427,0.7501,92,8,24,1.0055,0,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Focal/Arm CNV Variation (Chr 9/14)
+Factor13,0.6745,0.1083,0.458,0.8622,92,20,16,1.0328,0,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Focal/Arm CNV Variation (Chr 20/22)
+Factor14,0.6365,0.0909,0.4491,0.8051,48,12,32,0.9468,4,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Secondary CNV / Lipid Signaling Axis (Prognostic Modulator)
+Factor15,0.594,0.1466,0.3828,0.8521,80,24,36,1.0502,12,0.8201,0.8819,0.7973,0.5888,Variable / Minor Latent Component,Immune Infiltration / Cytolytic T-Cell vs Oncogenic CNV

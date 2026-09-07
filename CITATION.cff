@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you utilize this computational framework or model in your research, please cite it as below."
+title: "A Reproducibility-Focused Multi-Omics Latent-Factor Framework for Prognostic Modeling in Hepatocellular Carcinoma"
+authors:
+  - family-names: "Ali"
+    given-names: "Abdullah I"
+    orcid: "https://orcid.org/0009-0005-6061-5562"
+    affiliation: "Independent Researcher, Egypt"
+    email: "abdallahhashem832@gmail.com"
+date-released: 2026-09-07
+version: 1.0.0
+keywords:
+  - "hepatocellular carcinoma"
+  - "multi-omics"
+  - "survival analysis"
+  - "MOFA2"
+  - "prognostic modeling"
+  - "reproducibility"
+  - "TRIPOD"
+license: "MIT"

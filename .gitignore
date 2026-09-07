@@ -1,0 +1,34 @@
+# Raw patient-level omics matrices (NEVER COMMIT)
+*.raw.rds
+*matrix*.rds
+*METH_MATRIX*
+*RNA_MATRIX*
+*CNV_MATRIX*
+*SNV_MATRIX*
+methylation_beta_raw.rds
+rna_expression_raw.rds
+cnv_segment_raw.rds
+snv_mutation_raw.rds
+clinical_data.tsv
+
+# Patient-level prediction records (privacy preservation)
+*patient_oof_predictions*.csv
+*TRUE_HOLDOUT_PREDICTIONS*.csv
+*BENCHMARK_OOF_PREDICTIONS*.csv
+
+# Intermediate checkpoints & caches
+checkpoints*/
+nested_cv_checkpoint_*.rds
+*.log
+*.pyc
+__pycache__/
+.Rhistory
+.RData
+.Rproj.user/
+.vscode/
+.idea/
+
+# Environment files
+.env
+*.key
+*.pem

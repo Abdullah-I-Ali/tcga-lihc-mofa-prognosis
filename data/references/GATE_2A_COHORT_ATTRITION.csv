@@ -1,0 +1,16 @@
+STAGE_ID,STAGE_NAME,START_N,RETAINED_N,EXCLUDED_N,PCT_RETAINED,EXCLUSION_REASONS
+S0,Raw TCGA-LIHC Starting Universe,377,377,0,100.0%,Total unique patients present in starting raw files
+S1,Clinical QC (Valid Overall Survival > 0),377,372,5,98.67%,"1 missing follow-up/death time (TCGA-2V-A95S) + 4 with OS == 0 days (TCGA-RC-A6M3, TCGA-CC-A9FU, TCGA-CC-A9FV, TCGA-BW-A5NQ)"
+S2_RAW,RNA Primary Tumor Selection,377,371,6,98.41%,"6 patients without primary tumor RNA-seq (TCGA-BC-4072, TCGA-DD-A115, TCGA-ED-1786, TCGA-ED-1787, TCGA-ED-1789, TCGA-FV-A4ZQ)"
+S2_QC,RNA Quality Control (Outliers Filtered),371,350,21,94.34%,21 patients with inter-sample Pearson correlation < 0.75
+S3_RAW,DNA Methylation Primary Tumor Selection,377,377,0,100.0%,All 377 patients have primary tumor 450k methylation data
+S3_QC,DNA Methylation Quality Control (Clean Probes),377,377,0,100.0%,135553 bad/cross-reactive probes removed; 0 patients excluded
+S3_COMBAT_STG,DNA Methylation ComBat (Stage Complete Cases),377,350,27,92.84%,27 patients with missing AJCC pathologic stage or age dropped in ComBat design matrix
+S4_RAW,CNV Segment Deconstruction & Tumor Selection,377,377,0,100.0%,100% of cohort has primary tumor CNV segments after semicolon unnesting
+S4_QC,CNV Gene Mapping & Immune Filter,377,377,0,100.0%,1:1 mapped to 40634 genes; 0 patients excluded
+S5_RAW,SNV Primary Tumor Selection,377,368,9,97.61%,"9 patients without primary tumor MAF (TCGA-DD-A4NA, TCGA-ED-1784, TCGA-ED-1788, TCGA-ED-A4XI, TCGA-ED-A5KG, TCGA-G3-A3CG, TCGA-G3-A7M6, TCGA-G3-A7M8, TCGA-MR-A8JO)"
+S5_QC,SNV Quality Control (Hypermutators Excluded),368,364,4,98.91%,"4 hypermutated patients with >486.9 functional mutations (TCGA-UB-A7MB, TCGA-4R-AA8I, TCGA-BC-A112, TCGA-CC-A7IH)"
+INTER_RAW,Raw 5-Way Intersection (No Post-QC Drops),377,355,22,94.16%,All 4 raw modalities present + valid OS > 0
+INTER_STD_4OMICS,Standard QC 4-Omics Intersection (RNA_QC + Meth + CNV + SNV_QC),377,341,36,90.45%,Full 4-omics overlap with RNA outliers (21) and SNV hypermutators (4) excluded
+INTER_STD_5WAY,Standard QC 5-Way Final Eligible Cohort (4 Omics + Valid OS),377,338,39,89.66%,Full 4-omics overlap with valid survival endpoint (>0 days)
+HIST_329,Historical Pipeline Intersection (ComBat Stage NAs Dropped),377,316,61,83.82%,Standard QC + ComBat stage-complete cases dropping 24-27 additional stage NA patients
